@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 
+                 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: white;
+    padding: 10px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+}
+
+/* Main Content */
+main {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Download Section */
+.download {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.download h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 40px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 220px;
+}
+
+.btn-ios {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-android {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn .icon {
+    font-size: 2.5rem;
+}
+
+.btn .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn .platform {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.btn .label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Features Section */
+.features {
+    margin-bottom: 30px;
+}
+
+.features h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #667eea;
+}
+
+.feature-item p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+}
