@@ -1,0 +1,11 @@
+{
+  "name": "yixinfang-app",
+  "version": "1.0.0",
+  "description": "艺信坊APP下载页面",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["static", "app", "download"],
+  "author": "",
+  "license": "MIT"
+}
